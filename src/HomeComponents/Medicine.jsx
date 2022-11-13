@@ -282,7 +282,7 @@ const Medicine = () =>
     <div>
         <Navbar />
         <Navbar />
-        <Navbar />
+        
         {/* Advertisement */}
            <div>
                <Box>
@@ -359,14 +359,15 @@ const Medicine = () =>
                    {/* featured brands */}
                    <div>
                          <div style={{width:"80%",margin:"auto",height:"60px"}}>
-                          <flex >
+                          <Flex >
                             <Box>
                           <Text textAlign="left" paddingTop="30px" color="#212121" fontSize="18px" lineHeight="1.42857143" fontFamily="Clear Sans,Helvetica Neue,Helvetica,Arial,sans-serif">Featured brands</Text>
                           </Box>
-                          {/* <Box>
-                          <Link textAlign="right" paddingTop="30px" color="#212121" fontSize="18px" lineHeight="1.42857143" fontFamily="Clear Sans,Helvetica Neue,Helvetica,Arial,sans-serif">SEE ALL</Link>
-                          </Box> */}
-                          </flex>
+                          <Spacer />
+                          <Box marginTop="25px">
+                          <Link textAlign="right" padding="5px" backgroundColor="orange" color="white" border="1px solid orange" fontSize="15px" lineHeight="1.42857143" fontFamily="Clear Sans,Helvetica Neue,Helvetica,Arial,sans-serif">SEE ALL</Link>
+                          </Box>
+                          </Flex>
 
                           </div>
                            
@@ -395,14 +396,15 @@ const Medicine = () =>
 
                    <div>
                          <div style={{width:"80%",margin:"auto",height:"60px"}}>
-                          <flex >
+                          <Flex >
                             <Box>
                           <Text textAlign="left" paddingTop="30px" color="#212121" fontSize="18px" lineHeight="1.42857143" fontFamily="Clear Sans,Helvetica Neue,Helvetica,Arial,sans-serif">Popular categories</Text>
                           </Box>
-                          {/* <Box>
-                          <Link textAlign="right" paddingTop="30px" color="#212121" fontSize="18px" lineHeight="1.42857143" fontFamily="Clear Sans,Helvetica Neue,Helvetica,Arial,sans-serif">SEE ALL</Link>
-                          </Box> */}
-                          </flex>
+                          <Spacer />
+                          <Box marginTop="25px">
+                          <Link textAlign="right" padding="5px" backgroundColor="orange" color="white" border="1px solid orange" fontSize="15px" lineHeight="1.42857143" fontFamily="Clear Sans,Helvetica Neue,Helvetica,Arial,sans-serif">SEE ALL</Link>
+                          </Box>
+                          </Flex>
 
                           </div>
                           {/*  */}
@@ -429,14 +431,16 @@ const Medicine = () =>
 {/*  */}
 <div>
                          <div style={{width:"80%",margin:"auto",height:"60px"}}>
-                          <flex >
+                          <Flex >
                             <Box>
+                          
                           <Text textAlign="left" paddingTop="30px" color="#212121" fontSize="18px" lineHeight="1.42857143" fontFamily="Clear Sans,Helvetica Neue,Helvetica,Arial,sans-serif">Sugar substitutes</Text>
                           </Box>
-                          {/* <Box>
-                          <Link textAlign="right" paddingTop="30px" color="#212121" fontSize="18px" lineHeight="1.42857143" fontFamily="Clear Sans,Helvetica Neue,Helvetica,Arial,sans-serif">SEE ALL</Link>
-                          </Box> */}
-                          </flex>
+                          <Spacer />
+                          <Box marginTop="25px">
+                          <Link textAlign="right" padding="5px" backgroundColor="orange" color="white" border="1px solid orange" fontSize="15px" lineHeight="1.42857143" fontFamily="Clear Sans,Helvetica Neue,Helvetica,Arial,sans-serif">SEE ALL</Link>
+                          </Box>
+                          </Flex>
 
                           </div>
                           {/*  */}

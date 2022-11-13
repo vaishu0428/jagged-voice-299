@@ -1,6 +1,12 @@
-import { Flex, Spacer,Box,Image,Link } from '@chakra-ui/react'
+import { Flex, Spacer,Box,Image,Link } from '@chakra-ui/react';
+import {useContext} from "react"
+import { NavLink } from 'react-router-dom';
+import { AuthContext } from '../Context/AuthContext';
+
 const Navbar = () =>
 {
+  
+ 
   return(
     <div style={{borderBottom:"2px solid #e0e0e0" , height:"45px",marginTop:"12px"}}>
     <Box>
@@ -12,13 +18,16 @@ const Navbar = () =>
     {/* <Spacer /> */}
     <Box w='700px' h='10' marginLeft="45px" fontSize="16px" fontFamily="Clear Sans,Helvetica Neue,Helvetica,Arial,sans-serif" fontWeight={700} textAlign="center" marginTop={2}>
         <Flex>
-        <Link>MIDICINES</Link>
+        <NavLink to="/">MIDICINES</NavLink>
+       
         <Spacer />
-        <Link>LAB TESTS</Link>
+        
+        <NavLink to="/all">LAB TESTS</NavLink>
         <Spacer />
         <Link>CONSULT DOCTORS</Link>
         <Spacer />
-        <Link>COVID-19</Link>
+        <NavLink  to="/covid">COVID-19</NavLink>
+       
         <Spacer />
         <Link>AYURVEDA</Link>
         <Spacer />
@@ -28,12 +37,14 @@ const Navbar = () =>
         </Box>
     {/* <Spacer /> */}
     <Box w='400px' h='10' marginLeft="220px" marginRight="25px" color="#212121" fontSize="14px" textAlign="center" marginTop={2} fontFamily="Clear Sans,Helvetica Neue,Helvetica,Arial,sans-serif">
-        <Flex>
-        <Link>Login   |</Link>
+       <Flex>
+       <NavLink to="/login">Log In |</NavLink>
+       
         
         
         
-        <Link marginLeft="10px">Sign Up</Link>
+        
+      
         <Spacer />
         <Link>Offers</Link>
         <Spacer />
