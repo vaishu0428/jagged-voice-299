@@ -26,7 +26,7 @@ const Deals=[
         text:"Popular Combi Link",
     },
 ]
-const cat =[
+const categ =[
   {
       "id": 109,
       "name": "Covid Essentials",
@@ -209,7 +209,7 @@ const AllData = () =>
   gap={4}
 >
 {
-     cat.map((e)=>
+     categ.map((e)=>
      (
          <>
          <GridItem>
